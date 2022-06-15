@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap component layout</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.css'
+        integrity='sha512-F5fn88UDJWd0T1GwpnIpbuFuSxCgXNnJhIihkiWeqYUyLt3oPUaYzL774VjL7eGj8ktZCZQS//txAxgokiz1Lw=='
+        crossorigin='anonymous' />
+    <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+<style>
+    body {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">泰山莊園咖啡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapse  -->
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link">菜單餐點</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">周邊景點</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">莊園位置</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">聯絡我們</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">咖啡故事</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- section01: carousel -->
+    <div id="section01">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- section02: card -->
+    <div id="section02">
+        <div class="container my-lg-3 my-3">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://picsum.photos/1920/1080/?random=10" class="card-img-top" alt="...">
+                        <img src="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">保護台北有點遠</h5>
+                            <p class="card-text">此外正在升級以來，原創辦理強烈衝突走勢隨着你也辦理食物擁有聲明，工商關西有一些意外證件，第三發貼伺。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://picsum.photos/1920/1080/?random=11" class="card-img-top" alt="...">
+                        <img src="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">保護台北有點遠</h5>
+                            <p class="card-text">此外正在升級以來，原創辦理強烈衝突走勢隨着你也辦理食物擁有聲明，工商關西有一些意外證件，第三發貼伺。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="https://picsum.photos/1920/1080/?random=12" class="card-img-top" alt="...">
+                        <img src="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">保護台北有點遠</h5>
+                            <p class="card-text">此外正在升級以來，原創辦理強烈衝突走勢隨着你也辦理食物擁有聲明，工商關西有一些意外證件，第三發貼伺。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section03 -->
+    <div id="section03">
+        <div class="container-fluid w-100 m-0 p-0" style="background: rgb(218, 218, 218);">
+            <div class="row w-100 p-0 m-0">
+                <div class="col-12 col-lg-6 p-0">
+                    <img src="https://picsum.photos/800/800/?random=20" class="card-img-top w-100 p-0">
+                </div>
+                <div class="col-12 col-lg-6 card-body px-5 d-flex flex-column justify-content-center"
+                    style="background: rgb(218, 218, 218);">
+                    <div class="d-flex flex-column align-items-center py-5 ">
+                        <h1 class="card-title text-center y-3">生意打算，我想。</h1>
+                        <p class="card-text">
+                            一場關注很多人喜歡模擬周圍頻道言論結果基礎，空間該公司昨日垃圾家園頭銜，義務證件看起來失去改革擔心原則日報基本上是一個不能閲讀者一切都，辦公顯卡建設而且看著往往寶貝一眼強調最大，你在地理它是經典，便。
+                        </p>
+                        <a href="#" class="btn btn-primary my-2 bg-success">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 p-0 m-0 flex-lg-row-reverse">
+                <div class="col-12 col-lg-6 p-0 ">
+                    <img src="https://picsum.photos/800/800/?random=78" class="card-img-top p-0 img-fluid">
+                </div>
+                <div class="col-12 col-lg-6 card-body px-5 d-flex flex-column justify-content-center"
+                    style="background: rgb(218, 218, 218);">
+                    <div class="d-flex flex-column align-items-center py-5">
+                        <h1 class="card-title text-center my-3">生意打算，我想。</h1>
+                        <p class="card-text">
+                            一場關注很多人喜歡模擬周圍頻道言論結果基礎，空間該公司昨日垃圾家園頭銜，義務證件看起來失去改革擔心原則日報基本上是一個不能閲讀者一切都，辦公顯卡建設而且看著往往寶貝一眼強調最大，你在地理它是經典，便。
+                        </p>
+                        <a href="#" class="btn btn-primary my-2 bg-success">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- section04: map -->
+    <div id="section04" style="background: rgb(218, 218, 218);">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233342.7767495456!2d120.75884962457094!3d23.96111600857616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d9993c19ef97%3A0x501e8c26187f5b16!2zSlVMVSBDYWZl77yI6YmF6bm_5ZKW5ZWh6aSo77yJ!5e0!3m2!1szh-TW!2stw!4v1655299573765!5m2!1szh-TW!2stw"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- section05: form -->
+    <div id="section05" style="background: rgb(218, 218, 218);">
+        <div class="container py-3">
+            <div class="text-center py-4">
+                <h1>聯絡我們</h1>
+                <h3>泰山咖啡莊園，傳承熱情coding精神</h3>
+                <p>任何服務問題或建議，歡迎透過客服表單告知我們，謝謝！</p>
+            </div>
+            <form class="row my-3 ">
+                <div class="col-12 col-lg-6 mt-3">
+                    <label for="name" class="form-label">姓名</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="name">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0 me-1 " type="radio" name="gender" value="先生">先生
+                            <input class="form-check-input mt-0" type="radio" name="gender" value="女士">女士
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 mt-3">
+                    <label for="tel" class="form-label">電話</label>
+                    <input type="text" class="form-control" id="tel">
+                </div>
+
+                <div class="col-12 col-lg-6 mt-3">
+                    <label for="email" class="form-label">電子信箱</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+
+                <div class="col-12 col-lg-6 mt-3">
+                    <label for="problem" class="form-label">問題類型</label>
+                    <select class="form-select">
+                        <option value="1">餐飲建議</option>
+                        <option value="2">客服</option>
+                        <option value="3">訂購服務</option>
+                    </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <label for="textarea" class="form-label">意見需求</label>
+                    <textarea id="textarea" class="form-control" cols="30" rows="8"></textarea>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <input class="form-check-input" type="checkbox"> 訂閱泰山莊園最新資訊
+                </div>
+
+                <div class="col-12 mt-3 text-center">
+                    <button type="submit" class="btn btn-secondary">送出</button>
+                </div>
+
+
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="bg-dark text-white">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-6">
+                    <img src="https://picsum.photos/400/400/?random=10" class="w-75 rounded-circle my-3">
+                </div>
+
+                <div class="col-lg-3 col-6 my-3">
+                    <p><strong>Address</strong></p>
+                    <ul class="list-unstyled ">
+                        <li>1234 Street Name</li>
+                        <li>City, AA 9999</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 my-3">
+                    <p><strong>Links</strong></p>
+                    <ul class="list-unstyled ">
+                        <li>Website builder</li>
+                        <li>Download for Windows</li>
+                        <li>Download for Mac</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 my-3">
+                    <p><strong>Contacts</strong></p>
+                    <ul class="list-unstyled ">
+                        <li>Email: support@mobirise.com</li>
+                        <li>Phone: +1 (0) 000 0000 001</li>
+                        <li>Fax: +1 (0) 000 0000 002</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center p-2">
+                ©Copyright 2021 yunsiou
+                practice - All Rights Reserved
+            </div>
+        </div>
+
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js'
+        integrity='sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ=='
+        crossorigin='anonymous'></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
